@@ -1,2 +1,7 @@
-# personal-hub
-Personal website made to collect a couple of things I want to share
+# Development Notes
+Gitignoring venv for now, so we recreate the env every time docker runs.
+
+run `docker-compose up --build`
+
+# Usage
+
