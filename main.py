@@ -1,6 +1,4 @@
 import streamlit as st
-from PIL import Image
-import base64
 
 # Page Configuration
 st.set_page_config(
@@ -57,39 +55,25 @@ with col3:
 with col4:
     st.page_link("pages/contact.py", label="Contact", icon="📧")
 
-st.title('Welcome to My Portfolio')
+st.title('Welcome')
 
 # Profile section
 col1, col2 = st.columns([1, 2])
 with col1:
     # Hard-coded profile picture
-    # Replace this URL with your actual image URL or base64 string
-    profile_image_url = "https://your-image-url.com/profile.jpg"
-    st.image(profile_image_url, width=250, caption="John Doe")
+    profile_image_url = "static/profile_image.jpeg"
+    st.image(profile_image_url, width=250, caption="Tommaso Bassignana's profile image.")
     
     # Hard-coded GIF
-    # Replace this URL with your actual GIF URL or base64 string
     gif_url = "https://your-gif-url.com/animation.gif"
     st.image(gif_url, caption="Featured Work", use_column_width=True)
 
-    # Alternative method using base64 (uncomment and replace with your image data)
-    """
-    # For profile picture
-    profile_image_base64 = "your-base64-encoded-image-string"
-    st.markdown(f'<img src="data:image/jpeg;base64,{profile_image_base64}" alt="Profile Picture" class="profile-img" width="250">', unsafe_allow_html=True)
-    
-    # For GIF
-    gif_base64 = "your-base64-encoded-gif-string"
-    st.markdown(f'<img src="data:image/gif;base64,{gif_base64}" alt="Featured Work" class="gif-container" width="100%">', unsafe_allow_html=True)
-    """
-
 with col2:
     st.markdown("""
-    # John Doe
-    ### Software Developer | Data Scientist
+    # Tommaso Bassignana
+    ### Insert a very cool description here.
     
-    I'm a passionate developer with expertise in Python, Machine Learning, and Web Development.
-    With 5 years of experience in building scalable applications and implementing data-driven solutions.
+    Double digit years of experience in breaking stuff, understanding stuff and building useful things, sometimes.
     
     [GitHub](https://github.com) | [LinkedIn](https://linkedin.com)
     """)
